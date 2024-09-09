@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EDD9CF">
+
+    <!-- Logo da pizzaria centralizado no topo -->
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="257dp"
+        android:layout_height="139dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:src="@drawable/gpgp_logo02" />
+
+    <!-- RecyclerView para exibir as pizzas em formato de grade -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_pizzas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
+    <!-- Informações sobre a quantidade total de pizzas e o valor -->
+    <TextView
+        android:id="@+id/total_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp"
+        android:text="Quantidade de pizzas: 0 | Valor Total: R$ 0,00"
+        android:textSize="18sp"
+        android:textColor="#32271C"/>
+
+    <!-- Botão para concluir o pedido -->
+    <Button
+        android:id="@+id/btn_conclude_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FINALIZAR PEDIDO"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50" />
+</LinearLayout>

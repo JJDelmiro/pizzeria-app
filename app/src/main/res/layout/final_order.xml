@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#EDD9CF">
+
+    <!-- Mensagem de pedido finalizado -->
+    <TextView
+        android:id="@+id/order_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedido Finalizado!"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/caveat_brush"
+        android:textColor="#32271C"/>
+
+    <!-- Valor total do pedido -->
+    <TextView
+        android:id="@+id/order_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: R$0,00"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:paddingTop="16dp"
+        android:fontFamily="@font/caveat_brush"
+        android:textColor="#32271C"/>
+
+    <!-- Botão para finalizar -->
+    <Button
+        android:id="@+id/button_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volte Sempre!"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/caveat_brush"
+        android:textColor="#32271C" />
+</LinearLayout>
